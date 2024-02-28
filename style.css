@@ -1,0 +1,126 @@
+.game-card {
+  max-width: 500px;
+  min-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.notGood {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#myIcon {
+  font-size: 2em;
+  width: 50px;
+  color: #333;
+  cursor: pointer;
+}
+
+.eilute {
+  display: flex;
+  gap: 5px;
+}
+
+.stulpelis {
+  flex: 1;
+  padding-top: calc(100% / 4 - 15px);
+  margin-top: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.stulpelis.done {
+  cursor: default;
+}
+
+.stulpelis.done:hover {
+  cursor: default;
+  box-shadow: none;
+}
+
+.stulpelis:hover {
+  box-shadow: inset 0px 0px 0px 1px red;
+}
+
+.stulpelis.finished {
+  opacity: 0;
+}
+
+.red {
+  background-color: #f06d69;
+}
+
+.green {
+  background-color: #6dd69e;
+}
+
+.blue {
+  background-color: #699ed6;
+}
+
+.cyan {
+  background-color: #69d6d2;
+}
+
+.yellow {
+  background-color: #d6d669;
+}
+
+.purple {
+  background-color: #b869d6;
+}
+
+.teal {
+  background-color: #69d6b8;
+}
+
+.orange {
+  background-color: #d69569;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.black {
+  background-color: black;
+}
+
+.color-hidden {
+  background-color: #dce8e6;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.leaderboard-table th {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 920px) {
+  .leaderboard-card {
+    display: none; /* Hide the leaderboard card */
+  }
+}
